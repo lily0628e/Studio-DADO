@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio DADO</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d27192ee21.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <ul class="gnb">
+            <li class="no-dim">
+                <a href="#">Studio DADO</a>
+            </li>
+            <li class="no-dim">
+                <a href="https://www.studiodado.com/">
+                    <svg class="fill-white size-full text-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.82 51.27">
+                        <path d="M12.19,51.27c-2.31,0-4.38-.55-6.21-1.66-1.83-1.11-3.29-2.58-4.36-4.41-1.08-1.83-1.61-3.84-1.61-6.02,0-2.31.52-4.38,1.57-6.21,1.04-1.83,2.47-3.27,4.27-4.32,1.83-1.08,3.89-1.61,6.17-1.61,1.93,0,3.7.46,5.31,1.38,1.64.92,2.94,2.15,3.89,3.7.98,1.52,1.47,3.18,1.47,4.98l-2.09-1.52.05-9.41h3.79v13.01c0,2.28-.54,4.33-1.61,6.17-1.08,1.8-2.55,3.24-4.41,4.32-1.83,1.08-3.9,1.61-6.21,1.61ZM12.19,47.62c1.58,0,3-.38,4.27-1.14,1.3-.76,2.31-1.77,3.04-3.04.76-1.3,1.14-2.72,1.14-4.27s-.38-2.97-1.14-4.27c-.73-1.3-1.74-2.32-3.04-3.08-1.26-.79-2.69-1.19-4.27-1.19s-3,.4-4.27,1.19c-1.26.76-2.28,1.79-3.04,3.08-.73,1.3-1.09,2.72-1.09,4.27s.36,2.97,1.09,4.27c.76,1.26,1.77,2.28,3.04,3.04,1.26.76,2.69,1.14,4.27,1.14Z"></path>
+                        <path d="M12.19,25.11c-2.31,0-4.38-.55-6.21-1.66-1.83-1.11-3.29-2.58-4.36-4.41-1.08-1.83-1.61-3.84-1.61-6.02,0-2.31.52-4.38,1.57-6.21,1.04-1.83,2.47-3.27,4.27-4.32,1.83-1.08,3.89-1.61,6.17-1.61,1.93,0,3.7.46,5.31,1.38,1.64.92,2.94,2.15,3.89,3.7.98,1.52,1.47,3.18,1.47,4.98l-2.09-1.52.05-9.41h3.79v13.01c0,2.28-.54,4.33-1.61,6.17-1.08,1.8-2.55,3.24-4.41,4.32-1.83,1.08-3.9,1.61-6.21,1.61ZM12.19,21.45c1.58,0,3-.38,4.27-1.14,1.3-.76,2.31-1.77,3.04-3.04.76-1.3,1.14-2.72,1.14-4.27s-.38-2.97-1.14-4.27c-.73-1.3-1.74-2.32-3.04-3.08-1.26-.79-2.69-1.19-4.27-1.19s-3,.4-4.27,1.19c-1.26.76-2.28,1.79-3.04,3.08-.73,1.3-1.09,2.72-1.09,4.27s.36,2.97,1.09,4.27c.76,1.26,1.77,2.28,3.04,3.04,1.26.76,2.69,1.14,4.27,1.14Z"></path>
+                        <path d="M38.64,51.27c-2.31,0-4.4-.55-6.26-1.66-1.83-1.11-3.29-2.58-4.36-4.41-1.07-1.83-1.61-3.86-1.61-6.07s.54-4.27,1.61-6.07c1.08-1.83,2.55-3.29,4.41-4.36,1.87-1.08,3.94-1.61,6.21-1.61s4.41.54,6.21,1.61c1.83,1.07,3.29,2.53,4.36,4.36,1.08,1.83,1.61,3.86,1.61,6.07s-.54,4.24-1.61,6.07c-1.08,1.83-2.53,3.3-4.36,4.41-1.83,1.11-3.9,1.66-6.21,1.66ZM38.64,47.67c1.58,0,3-.38,4.27-1.14,1.26-.79,2.26-1.82,2.99-3.08.76-1.3,1.14-2.72,1.14-4.27s-.38-2.96-1.14-4.22c-.73-1.3-1.72-2.32-2.99-3.08-1.26-.79-2.69-1.19-4.27-1.19s-3,.4-4.27,1.19c-1.26.76-2.28,1.79-3.04,3.08-.76,1.26-1.14,2.67-1.14,4.22s.38,2.97,1.14,4.27c.76,1.26,1.77,2.29,3.04,3.08,1.26.76,2.69,1.14,4.27,1.14Z"></path>
+                        <path d="M38.27,25.06c-2.21,0-4.45-.55-6.22-1.66-1.74-1.11-3.11-2.58-4.13-4.41-1.01-1.83-1.52-3.86-1.52-6.07s.54-4.24,1.61-6.07c1.08-1.83,2.53-3.29,4.36-4.36,1.83-1.08,3.9-1.61,6.21-1.61s4.38.54,6.21,1.61c1.87,1.04,3.34,2.48,4.41,4.32,1.08,1.8,1.61,3.84,1.61,6.12v11.62h-3.6v-8.73l1.38-1.52c0,1.99-.46,4.43-1.38,6.08-.62,1.49-3.48,4.69-8.95,4.69ZM38.59,21.45c1.58,0,3-.38,4.27-1.14,1.3-.79,2.31-1.82,3.04-3.08.76-1.3,1.14-2.72,1.14-4.27s-.38-2.96-1.14-4.22c-.73-1.3-1.74-2.32-3.04-3.08-1.26-.79-2.69-1.19-4.27-1.19s-3,.4-4.27,1.19c-1.26.76-2.28,1.79-3.04,3.08-.73,1.26-1.09,2.67-1.09,4.22s.36,2.97,1.09,4.27c.76,1.26,1.77,2.29,3.04,3.08,1.26.76,2.69,1.14,4.27,1.14Z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="center-align">
+                <ul class="nav1">
+                    <span class="dot"></span>
+                    <li><a href="https://www.studiodado.com/projects">Projects</a></li>
+                    <li><a href="https://www.studiodado.com/approach">Approach</a></li>
+                    <li><a href="https://www.studiodado.com/about-us">About Us</a></li>
+                </ul>
+            </li>
+            <li class="right-align">
+                <ul class="nav2">
+                    <span class="dot"></span>
+                    <li><a href="https://www.studiodado.com/news">News</a></li>
+                    <li><a href="https://www.studiodado.com/blog">Blog</a></li>
+                </ul>
+            </li>
+            <li class="right-align">
+                <ul class="nav3">
+                    <span class="dot"></span>
+                    <li><a href="https://www.studiodado.com/contact">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <div id="viewport">
+        <div id="scroll-container">
+            <section>
+                <div class="intro">
+                    <div class="video-area">
+                        <video autoplay muted loop playsinline class="video">
+                        <source src="videos/page1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="text-area">
+                        <div class="left">
+                            <div class="line-mask">
+                                <div class="line">Interior design</div>
+                            </div>
+                            <div class="line-mask">
+                                <div class="line">for hospitality</div>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <div class="first-line">
+                                <div class="line-mask">
+                                    <div class="line">
+                                        <span>About</span>
+                                        We create innovative and
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line-mask">
+                                <div class="line">
+                                thought-provoking environments that
+                                </div>
+                            </div>
+                            <div class="line-mask">
+                                <div class="line">
+                                foster deeper human experiences.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-change white">
+                            <a href="https://www.studiodado.com/approach" class="btn-approach">
+                            <span class="viewport">
+                                <span class="track">
+                                <span class="arrow">→</span>
+                                <span class="txt">Approach</span>
+                                <span class="arrow">→</span>
+                                </span>
+                            </span>
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="big">
+                        <div class="top-line">
+                        <div class="form">
+                            <div class="line-mask">
+                            <div class="line">FORM</div>
+                            </div>
+                        </div>
+                        <div class="follows">
+                            <div class="line-mask">
+                            <div class="line">FOLLOWS</div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="feeling">
+                            <div class="line-mask">
+                                <div class="line">FEELING</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page1">
+                    <div class="text-area">
+                        <div class="line-mask">
+                            <div class="line">Empathy shapes everything we</div>
+                        </div>
+                        <div class="line-mask">
+                            <div class="line">create, from the first</div>
+                        </div>
+                        <div class="line-mask">
+                            <div class="line">impression to the final detail.</div>
+                        </div>
+                    </div>
+                    <div class="video-area">
+                        <video autoplay muted loop playsinline class="video">
+                            <source src="videos/animation.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="page2">
+                    <div class="text-zone">
+                        <div class="title">
+                            Interior design for <br>
+                            hospitality
+                        </div>
+                        <div class="description">
+                            <div class="top-sec">
+                                Studio DADO is a team of designers working to<br>
+                                deepen the human experience. We’ve built a<br> 
+                                world where empathy is embedded in every<br> 
+                                interaction, shaping spaces that feel intuitive, <br>
+                                personal, and alive. Our close client <br>
+                                relationships spark new ways of working, <br>
+                                leading to finely crafted environments that help <br>
+                                us connect more deeply. <br>
+                            </div>
+                            <div class="bottom-sec">
+                                Each project begins with how the space should <br>
+                                feel, shaped by the client’s vision, the energy <br>
+                                they want to create, and the moments they <br>
+                                hope to inspire. These elements combine to <br>
+                                form something original and unforgettable. We <br>
+                                dive into every nuance to craft stories guests <br>
+                                can feel, long after they’ve left the space.
+                            </div>
+                        </div>
+                        <div class="page-change">
+                            <a href="https://www.studiodado.com/approach" class="btn-approach">
+                                <span class="viewport">
+                                    <span class="track">
+                                        <span class="arrow">→</span>
+                                        <span class="txt">Approach</span>
+                                        <span class="arrow">→</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page3">
+                    <div class="text-zone">
+                        <div class="title">
+                            <div class="line-mask">
+                                <div class="line">Featured</div>
+                            </div>
+                            <div class="line-mask">
+                                <div class="line">Projects</div>
+                            </div>
+                        </div>
+                        <div class="page-change">
+                            <a href="https://www.studiodado.com/projects" class="btn-approach">
+                            <span class="viewport">
+                                <span class="track">
+                                <span class="arrow">→</span>
+                                <span class="txt">All projects</span>
+                                <span class="arrow">→</span>
+                                </span>
+                            </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page4">
+                    <div class="contents">
+                        <a href="https://www.studiodado.com/project/grand-atrium" target="_blank">
+                            <div class="left-box">
+                                <div class="photo-box">
+                                    <div class="photo-area"></div>
+                                </div>
+                                <div class="text-box">
+                                    <p>Grand Atrium</p>
+                                    <span class="category">Public Spaces</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="right-box">
+                            <div class="top-box">
+                                <a href="https://www.studiodado.com/project/allura-vista-suite"  target="_blank">
+                                    <div class="top-left">
+                                        <div class="photo-box">
+                                            <div class="photo-area"></div>
+                                        </div>
+                                        <div class="text-box">
+                                            <p>Allura <br> 
+                                                Vista Suite</p>
+                                            <span class="category">
+                                                Guestrooms &<br>
+                                                Suites</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://www.studiodado.com/project/serene-spa-and-wellness" target="_blank">
+                                    <div class="top-right">
+                                        <div class="photo-box">
+                                            <div class="photo-area"></div>
+                                        </div>
+                                        <div class="text-box">
+                                            <p>Serene Spa and <br>
+                                                Wellness</p>
+                                            <span class="category">
+                                                Spa & <br>
+                                                Fitness</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="https://www.studiodado.com/project/toscana" target="_blank">
+                                <div class="bottom-box">
+                                    <div class="photo-box">
+                                        <div class="photo-area"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Toscana</p>
+                                        <span class="category">Restaurants</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page5">
+                    <div class="contents">
+                        <div class="textbox">
+                            <div class="line-mask">
+                                <div class="line">Our blog is a bright, ever-evolving</div>
+                            </div>
+                            <div class="line-mask">
+                                <div class="line">platform where our ideas, our</div>
+                            </div>
+                            <div class="line-mask">
+                                <div class="line">culture and our perspective live and</div>
+                            </div>
+                            <div class="line-mask">
+                                <div class="line">breathe.</div>
+                            </div>
+                        </div>
+                        <div class="bottom-text">
+                            <div class="line-mask">
+                                <div class="line">Latest blog articles</div>
+                            </div>
+                        <div class="page-change">
+                            <a href="https://www.studiodado.com/blog" class="btn-approach">
+                            <span class="viewport">
+                                <span class="track">
+                                    <span class="arrow">→</span>
+                                    <span class="txt">See all blog articles</span>
+                                    <span class="arrow">→</span>
+                                </span>
+                            </span>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page6">
+                    <div class="contents">
+                        <div class="box1">
+                            <a href="https://www.studiodado.com/blog/luxury-trains-and-the-cruise-and-hospitality-world">
+                                <div class="photo-box">
+                                    <div class="photo-area"></div>
+                                </div>
+                                <div class="text-box">
+                                    <div class="date">Feb 26, 2026</div>
+                                    <div class="tit">
+                                        The Romance of Travel: What<br> 
+                                        Luxury Trains Can Teach the <br>
+                                        Cruise and Hospitality World
+                                    </div>
+                                </div>
+                                </a>
+                        </div>
+                        <div class="box2">
+                            <a href="https://www.studiodado.com/blog/maximalism-in-hospitality-design">
+                                <div class="photo-box">
+                                    <div class="photo-area"></div>
+                                </div>
+                                <div class="text-box">
+                                    <div class="date">Nov 12, 2025</div>
+                                    <div class="tit">
+                                        More Is More: Why Maximalism <br>
+                                        Is Making a Bold Return in <br>
+                                        Hospitality Design
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box3">
+                            <a href="https://www.studiodado.com/blog/miami-design">
+                                <div class="photo-box">
+                                    <div class="photo-area"></div>
+                                </div>
+                                <div class="text-box">
+                                    <div class="date">Oct 21, 2025</div>
+                                    <div class="tit">Miami Design: How the City <br>
+                                        Became a Global Capital of <br>
+                                        Culture, Cuisine, and Creativity
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page7">
+                    <div class="text-zone">
+                        <div class="left">
+                            <div class="line-mask">
+                                <div class="line">Studio</div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="line-mask">
+                                <div class="line">Dado</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page8">
+                    <div class="contents">
+                        <div class="photo-left"></div>
+                        <div class="right-text">
+                            <p>
+                                <div class="top">
+                                        <div class="first-line">
+                                            <span>Studio</span>
+                                            Working with us is a true creative<br>
+                                        </div>
+                                        partnership. Our clients understand what their <br>
+                                        spaces need to feel like, and to uncover that, <br>
+                                        we take the time to truly understand them.
+                                </div>
+                                <div class="bottom">
+                                    These relationships allow us to anticipate <br>
+                                    what each person needs at every moment in <br>
+                                    the design process. We stay close, from early <br>
+                                    visioning to late-night texts to last-minute <br>
+                                    material decisions, because great design <br>
+                                    begins with trust and is built through <br>
+                                    collaboration.
+                                </div>
+                            </p>
+                            <div class="page-change">
+                                <a href="https://www.studiodado.com/about-us" class="btn-approach">
+                                    <span class="viewport">
+                                        <span class="track">
+                                            <span class="arrow">→</span>
+                                            <span class="txt">
+                                                <span class="line-mask">
+                                                    <span class="line">More about Studio DADO</span>
+                                                </span>
+                                            </span>
+                                            <span class="txt">
+                                                <span class="line-mask">
+                                                    <span class="line">→</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="contents-top">
+                    <ul class="gnb">
+                        <li class="left1"><a href="#">Studio DADO</a></li>
+                        <li class="left2">
+                            <a href="https://www.studiodado.com/">
+                                <svg class="fill-white size-full text-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.82 51.27">
+                                    <path d="M12.19,51.27c-2.31,0-4.38-.55-6.21-1.66-1.83-1.11-3.29-2.58-4.36-4.41-1.08-1.83-1.61-3.84-1.61-6.02,0-2.31.52-4.38,1.57-6.21,1.04-1.83,2.47-3.27,4.27-4.32,1.83-1.08,3.89-1.61,6.17-1.61,1.93,0,3.7.46,5.31,1.38,1.64.92,2.94,2.15,3.89,3.7.98,1.52,1.47,3.18,1.47,4.98l-2.09-1.52.05-9.41h3.79v13.01c0,2.28-.54,4.33-1.61,6.17-1.08,1.8-2.55,3.24-4.41,4.32-1.83,1.08-3.9,1.61-6.21,1.61ZM12.19,47.62c1.58,0,3-.38,4.27-1.14,1.3-.76,2.31-1.77,3.04-3.04.76-1.3,1.14-2.72,1.14-4.27s-.38-2.97-1.14-4.27c-.73-1.3-1.74-2.32-3.04-3.08-1.26-.79-2.69-1.19-4.27-1.19s-3,.4-4.27,1.19c-1.26.76-2.28,1.79-3.04,3.08-.73,1.3-1.09,2.72-1.09,4.27s.36,2.97,1.09,4.27c.76,1.26,1.77,2.28,3.04,3.04,1.26.76,2.69,1.14,4.27,1.14Z"></path>
+                                    <path d="M12.19,25.11c-2.31,0-4.38-.55-6.21-1.66-1.83-1.11-3.29-2.58-4.36-4.41-1.08-1.83-1.61-3.84-1.61-6.02,0-2.31.52-4.38,1.57-6.21,1.04-1.83,2.47-3.27,4.27-4.32,1.83-1.08,3.89-1.61,6.17-1.61,1.93,0,3.7.46,5.31,1.38,1.64.92,2.94,2.15,3.89,3.7.98,1.52,1.47,3.18,1.47,4.98l-2.09-1.52.05-9.41h3.79v13.01c0,2.28-.54,4.33-1.61,6.17-1.08,1.8-2.55,3.24-4.41,4.32-1.83,1.08-3.9,1.61-6.21,1.61ZM12.19,21.45c1.58,0,3-.38,4.27-1.14,1.3-.76,2.31-1.77,3.04-3.04.76-1.3,1.14-2.72,1.14-4.27s-.38-2.97-1.14-4.27c-.73-1.3-1.74-2.32-3.04-3.08-1.26-.79-2.69-1.19-4.27-1.19s-3,.4-4.27,1.19c-1.26.76-2.28,1.79-3.04,3.08-.73,1.3-1.09,2.72-1.09,4.27s.36,2.97,1.09,4.27c.76,1.26,1.77,2.28,3.04,3.04,1.26.76,2.69,1.14,4.27,1.14Z"></path>
+                                    <path d="M38.64,51.27c-2.31,0-4.4-.55-6.26-1.66-1.83-1.11-3.29-2.58-4.36-4.41-1.07-1.83-1.61-3.86-1.61-6.07s.54-4.27,1.61-6.07c1.08-1.83,2.55-3.29,4.41-4.36,1.87-1.08,3.94-1.61,6.21-1.61s4.41.54,6.21,1.61c1.83,1.07,3.29,2.53,4.36,4.36,1.08,1.83,1.61,3.86,1.61,6.07s-.54,4.24-1.61,6.07c-1.08,1.83-2.53,3.3-4.36,4.41-1.83,1.11-3.9,1.66-6.21,1.66ZM38.64,47.67c1.58,0,3-.38,4.27-1.14,1.26-.79,2.26-1.82,2.99-3.08.76-1.3,1.14-2.72,1.14-4.27s-.38-2.96-1.14-4.22c-.73-1.3-1.72-2.32-2.99-3.08-1.26-.79-2.69-1.19-4.27-1.19s-3,.4-4.27,1.19c-1.26.76-2.28,1.79-3.04,3.08-.76,1.26-1.14,2.67-1.14,4.22s.38,2.97,1.14,4.27c.76,1.26,1.77,2.29,3.04,3.08,1.26.76,2.69,1.14,4.27,1.14Z"></path>
+                                    <path d="M38.27,25.06c-2.21,0-4.45-.55-6.22-1.66-1.74-1.11-3.11-2.58-4.13-4.41-1.01-1.83-1.52-3.86-1.52-6.07s.54-4.24,1.61-6.07c1.08-1.83,2.53-3.29,4.36-4.36,1.83-1.08,3.9-1.61,6.21-1.61s4.38.54,6.21,1.61c1.87,1.04,3.34,2.48,4.41,4.32,1.08,1.8,1.61,3.84,1.61,6.12v11.62h-3.6v-8.73l1.38-1.52c0,1.99-.46,4.43-1.38,6.08-.62,1.49-3.48,4.69-8.95,4.69ZM38.59,21.45c1.58,0,3-.38,4.27-1.14,1.3-.79,2.31-1.82,3.04-3.08.76-1.3,1.14-2.72,1.14-4.27s-.38-2.96-1.14-4.22c-.73-1.3-1.74-2.32-3.04-3.08-1.26-.79-2.69-1.19-4.27-1.19s-3,.4-4.27,1.19c-1.26.76-2.28,1.79-3.04,3.08-.73,1.26-1.09,2.67-1.09,4.22s.36,2.97,1.09,4.27c.76,1.26,1.77,2.29,3.04,3.08,1.26.76,2.69,1.14,4.27,1.14Z"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="right1"><span>Work together?</span></li>
+                        <li class="right2">
+                            <div class="page-change white">
+                                <a href="https://www.studiodado.com/contact" class="btn-approach">
+                                    <span class="viewport">
+                                        <span class="track">
+                                            <span class="arrow">→</span>
+                                            <span class="txt">Contact</span>
+                                            <span class="arrow">→</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contents">
+                    <div class="listup">
+                        <ul class="list">
+                            <li  class="tit contact">
+                                <span>Contact</span>
+                                    <ul class="ul-contact">
+                                        <li>
+                                            <p>
+                                            Studio DADO<br>
+                                            800 South Douglas Road,<br>
+                                            Suite 130, La Puerta Del Sol<br>
+                                            Coral Gables, FL 33134
+                                            </p>
+                                        </li>
+                                        <li class="under-line">
+                                            info@studiodado.com
+                                        </li>
+                                        <li class="under-line">
+                                            786.433.2500
+                                        </li>
+                                    </ul>
+                            </li>
+                            <li  class="tit sitemap">
+                                <span>Sitemap</span>
+                                <ul class="ul-sitemap hoverchange">
+                                    <li><a href="https://www.studiodado.com/">Home</a></li>
+                                    <li><a href="https://www.studiodado.com/approach">Approach</a></li>
+                                    <li><a href="https://www.studiodado.com/blog">Blog</a></li>
+                                    <li><a href="https://www.studiodado.com/news">News</a></li>
+                                    <li><a href="https://www.studiodado.com/about-us">About</a></li>
+                                    <li><a href="https://www.studiodado.com/contact">Contact</a></li>
+                                </ul>
+                            </li>
+                            <li  class="tit socials">
+                                <span>Socials</span>
+                                <ul class="ul-socials hoverchange">
+                                    <li><a href="instagram.com/studiodado/">Instagram</a></li>
+                                    <li><a href="#">LinkedIn</a></li>
+                                </ul>
+                            </li>
+                            <li  class="tit updates">
+                                <span>Updates</span>
+                                <ul class="ul-updates">
+                                    <li>Get occasional updates on all things DADO.</li>
+                                    <li class="emailbox my-5">
+                                        <div class="flex items-center bg-[#554D42] px-25 py-5 pl-10">
+                                            <input 
+                                                class="flex-1 text-white bg-transparent placeholder-white/20 outline-none border-none" 
+                                                type="email" 
+                                                placeholder="Email here">
+                                            <button class="text-white text-xl mr-10">
+                                                →
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="privacy">
+                                        When you sign up for our newsletter you agree to our 
+                                        <a href="https://www.studiodado.com/privacy-policy">privacy policy</a> 
+                                        and will 
+                                        receive commerical emails.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <ul>
+                            <li class="copy">© Studio DADO 2025</li>
+                            <li class="policy"><a href="https://www.studiodado.com/privacy-policy">Privacy policy</a></li>
+                            <li class="back"><a href="#">Back to top</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>
